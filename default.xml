@@ -12,10 +12,6 @@
     
     <!-- AOSP -->
     <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-    <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed">
-        <linkfile src="root.bp" dest="Android.bp" />
-        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-    </project>
     <project path="art" name="platform/art" groups="pdk" />
     <project path="bionic" name="platform/bionic" groups="pdk" />
     <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -571,6 +567,10 @@
         <linkfile src="tools" dest="build/tools" />
     </project>
     <project path="build/kati" name="octogen_build_kati" remote="odp" revision="o" />
+    <project path="build/soong" name="octogen_build_soong" remote="odp" revision="o" >
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
 
     <!-- Octogen OS Vendor -->
     <project path="vendor/octogen" name="octogen_vendor" remote="odp" revision="o" >
