@@ -11,15 +11,6 @@
     <remote name="github" fetch="https://github.com" />
     
     <!-- AOSP -->
-    <project path="build/make" name="platform/build" groups="pdk">
-        <copyfile src="core/root.mk" dest="Makefile" />
-        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-        <linkfile src="core" dest="build/core" />
-        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-        <linkfile src="target" dest="build/target" />
-        <linkfile src="tools" dest="build/tools" />
-    </project>
     <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
     <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
     <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed">
@@ -569,6 +560,17 @@
             Octogen OS [Powered by Android 8 Oreo]
 	    OctoDev Project
     -->
+
+    <!-- Build -->
+    <project path="build/make" name="octogen_build" groups="pdk" remote="odp" revision="o" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
 
     <!-- Octogen OS Vendor -->
     <project path="vendor/octogen" name="octogen_vendor" remote="odp" revision="o" >
