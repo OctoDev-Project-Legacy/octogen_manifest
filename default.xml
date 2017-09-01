@@ -412,7 +412,6 @@
     <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" groups="pdk-fs" />
     <project path="packages/apps/WallpaperPicker" name="platform/packages/apps/WallpaperPicker" groups="pdk-fs" />
     <project path="packages/experimental" name="platform/packages/experimental" />
-    <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" groups="pdk-fs" />
     <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" groups="pdk-fs" />
     <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" groups="pdk-fs" />
     <project path="packages/providers/BlockedNumberProvider" name="platform/packages/providers/BlockedNumberProvider" groups="pdk-fs" />
@@ -519,7 +518,6 @@
     <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />
     <project path="system/tpm" name="platform/system/tpm" />
     <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" />
-    <project path="system/vold" name="platform/system/vold" groups="pdk" />
     <project path="test/vts" name="platform/test/vts" groups="vts,pdk" />
     <project path="test/vts-testcase/fuzz" name="platform/test/vts-testcase/fuzz" groups="vts,pdk" />
     <project path="test/vts-testcase/hal" name="platform/test/vts-testcase/hal" groups="vts,pdk" />
@@ -567,14 +565,23 @@
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
 
+    <!-- Other -->
     <project path="bionic" name="octogen_bionic" remote="odp" revision="o" />
 
+    <!-- System -->
     <project path="system/core" name="octogen_system_core" remote="odp" revision="o" />
+    <project path="system/vold" name="octogen_system_vold" remote="odp" revision="o" />
 
+    <!-- Frameworks -->
     <project path="frameworks/base" name="octogen_frameworks_base" remote="odp" revision="o" />
     <project path="frameworks/native" name="octogen_frameworks_native" remote="odp" revision="o" />
 
+    <!-- Packages -->
+    <project path="packages/inputmethods/LatinIME" name="octogen_packages_inputmethods_LatinIME" remote="odp" revision="o" />
+
+    <!-- Apps -->
     <project path="packages/apps/Settings" name="octogen_packages_apps_Settings" remote="odp" revision="o" />
+    <project path="packages/apps/OctogenSettings" name="octogen_packages_apps_OctogenSettings" remote="odp" revision="o" />
 
     <!-- Octogen OS Vendor -->
     <project path="vendor/octogen" name="octogen_vendor" remote="odp" revision="o" >
