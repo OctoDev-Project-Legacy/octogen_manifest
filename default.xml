@@ -13,7 +13,6 @@
     <!-- AOSP -->
     <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
     <project path="art" name="platform/art" groups="pdk" />
-    <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
     <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
     <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
     <project path="developers/build" name="platform/developers/build" />
@@ -567,6 +566,7 @@
 
     <!-- Other -->
     <project path="bionic" name="octogen_bionic" remote="odp" revision="o" />
+    <project path="bootable/recovery" name="octogen_bootable_recovery" remote="odp" revision="o" />
 
     <!-- System -->
     <project path="system/core" name="octogen_system_core" remote="odp" revision="o" />
