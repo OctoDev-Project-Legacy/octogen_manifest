@@ -574,6 +574,7 @@
     <project path="packages/inputmethods/LatinIME" name="octogen_packages_inputmethods_LatinIME" remote="odp" revision="o" />
 
     <!-- Apps -->
+    <project path="packages/apps/Bluetooth" name="octogen_packages_apps_Bluetooth" remote="odp" revision="o" />
     <project path="packages/apps/Browser" name="octogen_packages_apps_Browser" remote="odp" revision="o" />
     <project path="packages/apps/Calendar" name="octogen_packages_apps_Calendar" remote="odp" revision="o" />
     <project path="packages/apps/Camera2" name="octogen_packages_apps_Camera2" remote="odp" revision="o" />
