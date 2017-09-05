@@ -378,7 +378,6 @@
     <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
     <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
     <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" groups="pdk-fs" />
-    <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
     <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
     <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
     <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
@@ -580,6 +579,7 @@
     <project path="packages/apps/Camera2" name="octogen_packages_apps_Camera2" remote="odp" revision="o" />
     <project path="packages/apps/Dialer" name="octogen_packages_apps_Dialer" remote="odp" revision="o" />
     <project path="packages/apps/Gallery2" name="octogen_packages_apps_Gallery2" remote="odp" revision="o" />
+    <project path="packages/apps/Launcher3" name="octogen_packages_apps_Launcher3" remote="odp" revision="o" />
     <project path="packages/apps/Messaging" name="octogen_packages_apps_Messaging" remote="odp" revision="o" />
     <project path="packages/apps/Settings" name="octogen_packages_apps_Settings" remote="odp" revision="o" />
     <project path="packages/apps/Terminal" name="octogen_packages_apps_Terminal" remote="odp" revision="o" />
