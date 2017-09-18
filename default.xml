@@ -3,7 +3,7 @@
     
     <remote name="aosp" fetch="https://android.googlesource.com" review="android-review.googlesource.com" />
     
-    <default revision="refs/tags/android-8.0.0_r4" remote="aosp" sync-j="16" />
+    <default revision="refs/tags/android-8.0.0_r11" remote="aosp" sync-j="16" />
     
     <!-- ODP (OctoDev Project) -->
     <remote name="odp" fetch="https://github.com/OctoDev-Project" sync-j="16" />
@@ -541,7 +541,7 @@
     -->
 
     <!-- Build -->
-    <project path="build/make" name="octogen_build_make" groups="pdk" remote="odp" revision="o" >
+    <project path="build/make" name="octogen_build_make" groups="pdk" remote="odp" revision="o_r11" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -550,38 +550,38 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
-    <project path="build/kati" name="octogen_build_kati" remote="odp" revision="o" />
-    <project path="build/soong" name="octogen_build_soong" remote="odp" revision="o" >
+    <project path="build/kati" name="octogen_build_kati" remote="odp" revision="o_r1" />
+    <project path="build/soong" name="octogen_build_soong" remote="odp" revision="o_r1" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
 
     <!-- Other -->
-    <project path="bionic" name="octogen_bionic" remote="odp" revision="o" />
-    <project path="bootable/recovery" name="octogen_bootable_recovery" remote="odp" revision="o" />
+    <project path="bionic" name="octogen_bionic" remote="odp" revision="o_r1" />
+    <project path="bootable/recovery" name="octogen_bootable_recovery" remote="odp" revision="o_r1" />
 
     <!-- System -->
-    <project path="system/core" name="octogen_system_core" remote="odp" revision="o" />
-    <project path="system/vold" name="octogen_system_vold" remote="odp" revision="o" />
+    <project path="system/core" name="octogen_system_core" remote="odp" revision="o_r1" />
+    <project path="system/vold" name="octogen_system_vold" remote="odp" revision="o_r1" />
 
     <!-- Frameworks -->
-    <project path="frameworks/base" name="octogen_frameworks_base" remote="odp" revision="o" />
-    <project path="frameworks/native" name="octogen_frameworks_native" remote="odp" revision="o" />
+    <project path="frameworks/base" name="octogen_frameworks_base" remote="odp" revision="o_r11" />
+    <project path="frameworks/native" name="octogen_frameworks_native" remote="odp" revision="o_r1" />
 
     <!-- Packages -->
-    <project path="packages/inputmethods/LatinIME" name="octogen_packages_inputmethods_LatinIME" remote="odp" revision="o" />
+    <project path="packages/inputmethods/LatinIME" name="octogen_packages_inputmethods_LatinIME" remote="odp" revision="o_r1" />
 
     <!-- Apps -->
-    <project path="packages/apps/Bluetooth" name="octogen_packages_apps_Bluetooth" remote="odp" revision="o" />
+    <project path="packages/apps/Bluetooth" name="octogen_packages_apps_Bluetooth" remote="odp" revision="o_r1" />
     <project path="packages/apps/Browser" name="octogen_packages_apps_Browser" remote="odp" revision="o" />
-    <project path="packages/apps/Calendar" name="octogen_packages_apps_Calendar" remote="odp" revision="o" />
-    <project path="packages/apps/Camera2" name="octogen_packages_apps_Camera2" remote="odp" revision="o" />
-    <project path="packages/apps/Dialer" name="octogen_packages_apps_Dialer" remote="odp" revision="o" />
-    <project path="packages/apps/Gallery2" name="octogen_packages_apps_Gallery2" remote="odp" revision="o" />
-    <project path="packages/apps/Launcher3" name="octogen_packages_apps_Launcher3" remote="odp" revision="o" />
-    <project path="packages/apps/Messaging" name="octogen_packages_apps_Messaging" remote="odp" revision="o" />
-    <project path="packages/apps/Settings" name="octogen_packages_apps_Settings" remote="odp" revision="o" />
-    <project path="packages/apps/Terminal" name="octogen_packages_apps_Terminal" remote="odp" revision="o" />
+    <project path="packages/apps/Calendar" name="octogen_packages_apps_Calendar" remote="odp" revision="o_r1" />
+    <project path="packages/apps/Camera2" name="octogen_packages_apps_Camera2" remote="odp" revision="o_r1" />
+    <project path="packages/apps/Dialer" name="octogen_packages_apps_Dialer" remote="odp" revision="o_r1" />
+    <project path="packages/apps/Gallery2" name="octogen_packages_apps_Gallery2" remote="odp" revision="o_r1" />
+    <project path="packages/apps/Launcher3" name="octogen_packages_apps_Launcher3" remote="odp" revision="o_r1" />
+    <project path="packages/apps/Messaging" name="octogen_packages_apps_Messaging" remote="odp" revision="o_r1" />
+    <project path="packages/apps/Settings" name="octogen_packages_apps_Settings" remote="odp" revision="o_r1" />
+    <project path="packages/apps/Terminal" name="octogen_packages_apps_Terminal" remote="odp" revision="o_r1" />
     <project path="packages/apps/OctogenSettings" name="octogen_packages_apps_OctogenSettings" remote="odp" revision="o" />
 
     <!-- Octogen OS Vendor -->
